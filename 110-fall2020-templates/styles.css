@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+html {
+    /* sets base font size for rem sizing */
+    font-size: 14px;
+    font-family: Lato, Trebuchet, Arial, sans-serif;
+}
+
+body {
+	background-color: #F6F7F8;
+  }
+
+  h1 {
+	  font-size: 1.5em;
+  }
+  
+  #grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+	padding: 15px; 
+	height: 90vh;
+	}
+	
+
+	.box {
+		background-color: #ffffff;
+		padding: 5px 15px;
+		border: 2px solid orange;
+		border-radius: 25px;
+		box-shadow: 2px 5px 8px 2px #999;
+	}
+	  
+  
+	#instructors {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	#instructors div {
+		border: 1px solid black;
+		border-radius: 25px;
+		padding: 5px;
+		margin: 5px;
+		width: 150px;
+	}
+  
+  @media only screen and (min-width: 900px) {
+	
+	#grid {
+		grid-template-columns: 1fr 2fr; 
+		grid-template-rows: 2fr 200px 2fr;
+	}
+	
+	#boxWelcome {
+		grid-column: 2/3;
+		grid-row: 1/2;
+
+		}
+	  
+	  #boxContent {
+		grid-column: 1/2;
+		grid-row: 1/4;
+	
+		}
+	  
+	  #boxProjects {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	
+		}
+	  
+	  #boxContact {
+		grid-column: 2/3;
+		grid-row: 3/4;
+		}}
