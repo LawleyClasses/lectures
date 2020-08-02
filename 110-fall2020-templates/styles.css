@@ -22,7 +22,7 @@ body {
   
   #homegrid {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 100%;
 	grid-template-rows: auto;
 	grid-gap: 20px;
 	padding: 15px; 
@@ -40,8 +40,7 @@ body {
 	  
   
 	#instructors {
-		display: flex;
-		flex-direction: row;
+		flex-flow: row wrap;
 		justify-content: space-around;
 	}
 
@@ -59,6 +58,8 @@ body {
 
 	.person p {
 		margin-top: 0px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ccc;
 	}
 
 	.person h3 {
@@ -92,4 +93,7 @@ body {
 	  #boxContact {
 		grid-column: 2/3;
 		grid-row: 3/4;
-		}}
+		}
+
+
+	}
