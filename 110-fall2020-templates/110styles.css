@@ -14,11 +14,21 @@ body {
 	background-color: #F6F7F8;
   }
 
+  .box {
+	background-color: #ffffff;
+	padding: 5px 15px;
+	border: 2px solid orange;
+	border-radius: 25px;
+	box-shadow: 2px 5px 8px 2px #999;
+	}
+
   h1 {
 	  font-size: 2.1em;
 	  line-height:1.3em;
 	  font-weight: 900;
-  }
+  	}
+
+  /* -------------- Mobile Homepage Styles -------------------- */
   
   #homegrid {
 	display: grid;
@@ -65,9 +75,25 @@ body {
 	.person h3 {
 		margin-bottom: 2px;
 	}
+
+/* ------- Mobile Employee Manual Styles ------------- */
+
+#producerbox {
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+
+/* ------- Mobile Skill Overview Styles -------------- */
+
+
+/* ------- Mobile Assignment Description Styles ------ */
+
+
   
   @media only screen and (min-width: 900px) {
 	
+/* ---------------- Desktop Homepage Styoles ------------- */
 	#homegrid {
 		grid-template-columns: 400px 1fr; 
 		grid-template-rows: 2fr 300px 2fr;
@@ -76,24 +102,43 @@ body {
 	#boxWelcome {
 		grid-column: 2/3;
 		grid-row: 1/2;
-		}
+	}
 	  
-	  #boxContent {
+	#boxContent {
 		grid-column: 1/2;
 		grid-row: 1/4;
-	
-		}
+	}
 	  
-	  #boxProjects {
+	#boxProjects {
 		grid-column: 2/3;
 		grid-row: 2/3;
-	
-		}
+	}
 	  
-	  #boxContact {
+	#boxContact {
 		grid-column: 2/3;
 		grid-row: 3/4;
-		}
+	}
 
+	/* ------- Mobile Employee Manual Styles ------------- */
+
+	#producergrid {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
 
 	}
+
+	.producerbox {
+		text-align: center;
+		flex-basis: 33%;
+	}
+
+
+/* ------- Mobile Skill Overview Styles -------------- */
+
+
+/* ------- Mobile Assignment Description Styles ------ */
+
+
+  }
+
