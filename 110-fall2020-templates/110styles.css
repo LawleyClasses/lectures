@@ -5,8 +5,8 @@
 
 html {
     /* sets base font size for rem sizing */
-	font-size: 16px;
-	line-height: 1.3em;
+	font-size: 100%;
+	line-height: 1.4rem;
     font-family: 'Lato', Trebuchet, Arial, sans-serif;
 }
 
@@ -23,8 +23,8 @@ body {
 	}
 
   h1 {
-	  font-size: 2.1em;
-	  line-height:1.3em;
+	  font-size: 2.1rem;
+	  line-height:1.3rem;
 	  font-weight: 900;
   	}
 
